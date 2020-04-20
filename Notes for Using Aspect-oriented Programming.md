@@ -37,7 +37,7 @@ public aspect Audience{
   			System.out.println(“Silencing cell phones”);
 			System.out.println(“Taking seats”);
 	
-        	//calling Performance.perform()
+        		//calling Performance.perform()
 			Object result = proceed(); 
 	
 			System.out.println(“Clap Clap”);
@@ -122,7 +122,7 @@ public aspect TrackCounter{
 
 	before(): trackPlayed(){
 		Object[] args = thisJoinPoint.getArgs();
-     	String track = (String)args[0]
+     		String track = (String)args[0]
 		int currentCount = getPlayCount(track);
 		trackCounts.put(track, currentCount+1);
 	}
