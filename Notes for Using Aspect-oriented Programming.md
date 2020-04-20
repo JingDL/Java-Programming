@@ -13,7 +13,7 @@ logger.info(“myfunction takes “ + (end-start) + “ ms.”);
 
   We should focus on our core functionality, and leave electricity meter reading task (an aspect)  to someone else. 
 
-##### 2.  AOP allows us to add execution blocks without explicitly changing the source code of the target class.  
+##### 2.  AOP allows us to add execution blocks without explicitly changing the source code of the target class  
 Let’s use an example to illustrate AOP program[1].  Suppose we have a class Performance:
 
 ```
@@ -182,14 +182,25 @@ AOP load-time weaving does not work for JDK classes (e.g. java.sql.Driver) becau
 
 ##### 7. References
 [1] https://www.baeldung.com/aspectj
+
 [2]https://o7planning.org/en/10257/java-aspect-oriented-programming-tutorial-with-aspectj
+
 [3]https://stackoverflow.com/questions/17338788/aspectj-pointcut-on-constructor-object
+
 [4]https://stackoverflow.com/questions/29561306/aspectj-how-to-get-accessed-fields-value-in-a-get-pointcut
+
 [5]https://stackoverflow.com/questions/5656554/getting-a-return-value-or-exception-from-aspectj
+
 [7]https://www.baeldung.com/spring-aop-vs-aspectj
+
 [8]https://stackoverflow.com/questions/17008819/spring-aop-using-aspectj-ltw-not-working
+
 [10] https://stackoverflow.com/questions/25299687/use-aspectj-to-monitor-database-access-methods
+
 [11]http://www.zhuwu.me/blog/posts/use-aspectj-to-modify-java-standard-library
+
 [12]https://stackoverflow.com/questions/42901291/does-aspectj-support-modifying-the-jdk-bytecode
+
 [13]http://aspectj.2085585.n4.nabble.com/LTW-and-rt-jar-td2081407.html
+
 [14]https://www.eclipse.org/aspectj/doc/next/progguide/language-joinPoints.html
