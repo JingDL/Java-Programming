@@ -85,9 +85,13 @@ public aspect Audience{
 
 ##### 3. New Concepts
 In the above example, we see four items:
+
 A join point -- concert.Performance.perform()
+
 An aspect -- class Audience
+
 A pointcut -- watchPerformance(): (“execution(* concert.Performance.perform(..))”)
+
 An advice -- watchPerformance();
 
 There are several types of pointcuts: execution(), call(), target(), within(), etc.[14]
