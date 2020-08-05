@@ -184,6 +184,9 @@ AspectJ is more powerful than Spring Framework AOP since AspectJ allows Pointcut
 
 AOP load-time weaving does not work for JDK classes (e.g. java.sql.Driver) because those classes are always loaded before the weaving agent.  The only workaround is to weave JDK distribution JAR (e.g rt.jar) into another JAR.[11],[12],[13], which usually is not recommended.
 
+AOP has performance impact.  In my work, I observed the woven JDBC driver is 10% slower on average than the origial JDBC driver.
+
+
 ##### 7. References
 [1] https://www.baeldung.com/aspectj
 
